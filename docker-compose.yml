@@ -54,7 +54,7 @@ services:
   # https://hub.docker.com/r/wurstmeister/kafka/
   kafka-connect:
     build:
-      context: ./kafka-connect
+      context: ./kafka-connect/distributed-initial/
       dockerfile: Dockerfile
     container_name: kafka-connect
     depends_on:
