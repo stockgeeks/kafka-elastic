@@ -52,10 +52,14 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 
   # https://hub.docker.com/r/wurstmeister/kafka/
-  kafka-connect:
+  kafka-connect-standalone:
     build:
-      context: ./kafka-connect/distributed-initial/
+      context: ./kafka-connect/standalone-initial/
       dockerfile: Dockerfile
-    container_name: kafka-connect
+    container_name: connect-standalone
+    ports:
+      - 8083:8083
     depends_on:
       - kafka
+    volumes:
+      - /tmp:/tmp
