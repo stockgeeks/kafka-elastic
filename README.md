@@ -4,6 +4,10 @@ This application demonstrates usage of connectors to propagate changes from a ka
 
 This application was generated using JHipster 6.2.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.2.0](https://www.jhipster.tech/documentation-archive/v6.2.0).
 
+# Elasticsearch
+
+Elasticsearch was recently added so here's a [link to it's rest interface](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html) for once it's running.
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
