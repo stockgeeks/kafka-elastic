@@ -1,4 +1,4 @@
-FROM wurstmeister/kafka:2.12-2.2.1
+FROM wurstmeister/kafka:2.12-2.3.0
 
 # we replace the default connect-standalone.properties so we can properly resolve to our local kafka docker development
 COPY connect-standalone.properties /opt/kafka/config/
